@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	
+    <ScrollView
+        android:id="@+id/Test_chooses_files_S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/Test_chooses_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+	</ScrollView>
+	
+    <Button
+        android:id="@+id/select_file_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Test_chooses_files_S"
+        android:layout_marginTop="17dp"
+        android:text="@string/select_button_content" />
+    <Button
+        android:id="@+id/generate_sift_fea_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_file_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/generate_sift_content" />
+    
+    <Button
+        android:id="@+id/cluster_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generate_sift_fea_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/cluster_content" />
+
+    <Button
+        android:id="@+id/freq_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cluster_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/freq_content" />
+    
+    <Button
+        android:id="@+id/lda_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/freq_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/lda_content" />
+    
+    <Button
+        android:id="@+id/copy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lda_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/copy_file_content" />
+    
+
+</RelativeLayout>
