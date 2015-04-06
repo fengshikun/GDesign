@@ -36,7 +36,7 @@ Application.mk
     APP_STL := gnustl_static
     APP_CPPFLAGS := -frtti -fexceptions
     APP_PLATFORM := android-8
-Multicore optimization
+###Multicore optimization
 Today more and more mobile devices feature multi-core processors.on  Which Java threadPool can be used to develop parallel computing。
 ExtractSiftFea.java:
 
