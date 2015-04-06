@@ -7,11 +7,13 @@ This is an Android application using machine learning algorithms to do images cl
 #Bag of words
 The bag-of-words model is a simplifying representation used in natural language processing(NLP) and information retrieval(IR).An Imagin can be treated as document by extracting its feature vector by some computer vision algorithms(here using SIFT).We can see that imagins to be classified all be translated to "bag of visual worlds"(128 dimension vector).
 ![Architecture](pics/archi.png)
+
 (Find more at http://en.wikipedia.org/wiki/Bag-of-words_model_in_computer_vision)
 #Configration
 ###SIFT Dependency(Generate SIFT Dynamically Loaded Library)
 Files Organization:
 ![organization](pics/file.png)
+
 Android.mk
 
     LOCAL_PATH:= $(call my-dir)
@@ -52,6 +54,8 @@ ExtractSiftFea.java:
     fixedThreadPool.shutdown();
 
 #Some results
-![Res1](res1.png)
-![Res2](res2.png)
-![Res3](res3.png)
+![Res1](pics/res1.png)
+
+![Res2](pics/res2.png)
+
+![Res3](pics/res3.png)
